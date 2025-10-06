@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横スクロールアクションゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div id="gameInfo">
+            スコア: <span id="score">0</span> | コイン: <span id="coinCount">0</span> / 10 | 残り時間: <span id="timeLeft">60</span>秒
+        </div>
+        <div id="controls">
+            スペースキー または 画面タップ でジャンプ！（2段ジャンプ可能）
+        </div>
+        <div id="gameOverText" class="gameOver" style="display:none;">
+            ゲームオーバー！
+            <br>
+            <button onclick="restartGame()">もう一度プレイ</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
